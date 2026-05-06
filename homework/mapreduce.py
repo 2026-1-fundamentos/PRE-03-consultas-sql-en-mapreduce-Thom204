@@ -5,7 +5,7 @@ def hadoop(input_directory, output_directory, mapper, reducer):
 
     def read_records_from_input(input_directory):
         sequence = []
-        files = glob.glob(f"{input_directory}*")
+        files = glob.glob(f"{input_directory}/*")
         for file in files:
             with open(file, "r", encoding="utf-8") as f:
                 for line in f:
