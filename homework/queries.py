@@ -1,7 +1,7 @@
 # pylint: disable=broad-exception-raised
 # pylint: disable=import-error
 
-from mapreduce import hadoop  # type: ignore
+from .mapreduce import hadoop  # type: ignore
 
 #
 # Columns:
