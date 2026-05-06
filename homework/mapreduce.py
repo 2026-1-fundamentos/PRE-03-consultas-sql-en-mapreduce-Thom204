@@ -13,7 +13,7 @@ def hadoop(input_directory, output_directory, mapper, reducer):
         return sequence
 
     def save_results_to_output(result):
-        with open(f"files/output/part-00000", "w", encoding="utf-8") as f:
+        with open(f"{output_directory}/part-00000", "w", encoding="utf-8") as f:
             for key, value in result:
                 f.write(f"{key}\t{value}\n")
 
